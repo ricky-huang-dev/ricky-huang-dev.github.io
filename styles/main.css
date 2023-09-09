@@ -1,26 +1,36 @@
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
 p {
-  font-family: sans-serif;
   color: green;
 }
 
 nav {
-  height: 20vh;
+  position: fixed;
+  right: 10px;
+  left: 10px;
+  height: 100px;
   background-color: rgb(255, 255, 255);
   border-color: rgb(0, 0, 0);
   border-width: 5px;
   border-style: solid;
   border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .nav-button-bar {
-  position: relative;
-  text-align: center;
-  width: 90vw;
+  position: fixed;
+  right: 10px;
+  top: 45px;
+  width: 500px;
   list-style-type: none;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .nav-button {
-  font-family: sans-serif;
   background-color: rgb(67, 67, 134);
   color: rgb(255, 255, 255);
   border-color: rgb(67, 67, 134);
@@ -30,24 +40,39 @@ nav {
   height: 40px;
   width: 200px;
   cursor: pointer;
+  margin: 5px 5px 5px 5px;
   padding: 10px;
+  transition: box-shadow 1s, background-color 0.5s, color 0.5s,
+    border-color 0.5s;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: rgb(67, 67, 134);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
+  border-color: white;
 }
 
 li {
   font-size: 20px;
-
-  display: inline;
+  display: inline-block;
 }
 
 .nav-logo {
-  width: 20%;
   font-size: 60px;
   text-align: left;
-  width: 100vw;
-  padding: 20px;
-  margin-top: -20px;
+  width: 25vw;
+  margin: 10px 10px 10px 10px;
+  transition: text-shadow 0.5s;
+}
+.nav-logo:hover {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.233);
 }
 
 a {
   text-decoration: none;
+}
+
+.main {
+  text-align: center;
 }
