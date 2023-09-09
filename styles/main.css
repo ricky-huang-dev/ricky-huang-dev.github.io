@@ -4,6 +4,7 @@ p {
 }
 
 nav {
+  height: 20vh;
   background-color: rgb(255, 255, 255);
   border-color: rgb(0, 0, 0);
   border-width: 5px;
@@ -11,29 +12,42 @@ nav {
   border-radius: 10px;
 }
 
-.nav-item {
+.nav-button-bar {
   position: relative;
   text-align: center;
   width: 90vw;
   list-style-type: none;
 }
 
+.nav-button {
+  font-family: sans-serif;
+  background-color: rgb(67, 67, 134);
+  color: rgb(255, 255, 255);
+  border-color: rgb(67, 67, 134);
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+  padding: 10px;
+}
+
 li {
-  font-size: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
+  font-size: 20px;
+
   display: inline;
 }
 
-.about-me {
+.nav-logo {
   width: 20%;
   font-size: 60px;
   text-align: left;
   width: 100vw;
   padding: 20px;
   margin-top: -20px;
+}
+
+a {
+  text-decoration: none;
 }
