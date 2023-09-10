@@ -3,18 +3,16 @@ p {
   color: green;
 }
 
-nav {
-  height: 20vh;
-
+.nav-bar {
+  height: auto;
   background-color: rgb(255, 255, 255);
   border-color: rgb(0, 0, 0);
   border-width: 5px;
   border-style: solid;
   border-radius: 10px;
-  overflow: hidden;
 }
 
-.nav-button {
+.nav-links {
   font-family: sans-serif;
   background-color: rgb(67, 67, 134);
   color: rgb(255, 255, 255);
@@ -25,6 +23,7 @@ nav {
   text-align: center;
   cursor: pointer;
   padding: 10px;
+  word-break: keep-all;
 }
 
 li {
