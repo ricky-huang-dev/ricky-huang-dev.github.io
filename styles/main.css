@@ -5,7 +5,7 @@ html {
 p {
   color: green;
 }
-
+/* nav bar */
 .nav-bar {
   position: fixed;
   right: 10px;
@@ -41,12 +41,95 @@ p {
   border-color: white;
 }
 
+/* nav bar end */
+
+/* drop down menu */
+
+.dropdown-button {
+  background-color: rgb(67, 67, 134);
+  color: rgb(255, 255, 255);
+  border-color: rgb(67, 67, 134);
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  transition: box-shadow 1s, background-color 0.5s, color 0.5s,
+    border-color 0.5s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: box-shadow 1s, background-color 0.5s, color 0.5s,
+    border-color 0.5s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(67, 67, 134);
+  color: rgb(255, 255, 255);
+  border-color: rgb(67, 67, 134);
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 1s, background-color 0.5s, color 0.5s,
+    border-color 0.5s;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 16px;
+  width: 88px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border-color: white;
+  transition: box-shadow 1s, background-color 0.5s, color 0.5s,
+    border-color 0.5s;
+}
+.dropdown-content a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(67, 67, 134);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
+  border-color: white;
+}
+
+.dropdown-button:hover {
+  background-color: white;
+  color: rgb(67, 67, 134);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
+  border-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: rgb(15, 15, 31);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.233);
+  border-color: rgb(240, 240, 240);
+  border-style: solid;
+}
+
+.dropdown:hover .dropdown-button {
+  background-color: white;
+  color: rgb(67, 67, 134);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
+  border-color: rgb(255, 255, 255);
+}
+
+/* drop down menu finish */
+
 li {
   float: right;
   font-size: 20px;
   list-style: none;
   margin: 5px;
 }
+
+/* logo */
 
 .nav-logo {
   font-size: 60px;
@@ -59,10 +142,11 @@ li {
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.233);
 }
 
+/* logo end */
 a {
   text-decoration: none;
 }
 
-.main {
-  margin-top: 200px;
+body {
+  margin-top: 150px;
 }
