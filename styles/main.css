@@ -6,28 +6,13 @@ p {
   color: green;
 }
 
-nav {
-  position: fixed;
-  right: 10px;
-  left: 10px;
-  height: 100px;
+.navbar {
   background-color: rgb(255, 255, 255);
   border-color: rgb(0, 0, 0);
   border-width: 5px;
   border-style: solid;
   border-radius: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.nav-button-bar {
-  position: fixed;
-  right: 10px;
-  top: 45px;
-  width: 500px;
-  list-style-type: none;
-  margin-right: 10px;
-  margin-left: 10px;
+  overflow: hidden;
 }
 
 .nav-button {
@@ -37,8 +22,7 @@ nav {
   border-width: 5px;
   border-style: solid;
   border-radius: 5px;
-  height: 40px;
-  width: 200px;
+  text-align: center;
   cursor: pointer;
   margin: 5px 5px 5px 5px;
   padding: 10px;
@@ -71,8 +55,4 @@ li {
 
 a {
   text-decoration: none;
-}
-
-.main {
-  text-align: center;
 }
