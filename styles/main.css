@@ -23,7 +23,6 @@ p {
   text-align: center;
   cursor: pointer;
   padding: 10px;
-  word-break: keep-all;
 }
 
 li {
