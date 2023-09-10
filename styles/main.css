@@ -1,10 +1,18 @@
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
 p {
-  font-family: sans-serif;
   color: green;
 }
 
 .nav-bar {
+  position: fixed;
+  right: 10px;
+  left: 10px;
+  top: 20px;
   height: auto;
+  margin-bottom: 50px;
   background-color: rgb(255, 255, 255);
   border-color: rgb(0, 0, 0);
   border-width: 5px;
@@ -13,33 +21,48 @@ p {
 }
 
 .nav-links {
-  font-family: sans-serif;
   background-color: rgb(67, 67, 134);
   color: rgb(255, 255, 255);
   border-color: rgb(67, 67, 134);
   border-width: 5px;
   border-style: solid;
   border-radius: 5px;
-  text-align: center;
+  float: right;
   cursor: pointer;
   padding: 10px;
+  transition: box-shadow 1s, background-color 0.5s, color 0.5s,
+    border-color 0.5s;
+}
+
+.nav-links:hover {
+  background-color: white;
+  color: rgb(67, 67, 134);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
+  border-color: white;
 }
 
 li {
+  float: right;
   font-size: 20px;
-
-  display: inline;
+  list-style: none;
+  margin: 5px;
 }
 
 .nav-logo {
-  width: 20%;
   font-size: 60px;
-  text-align: left;
-  width: 100vw;
-  padding: 20px;
-  margin-top: -20px;
+  float: left;
+  width: auto;
+  margin: 10px 10px 10px 10px;
+  transition: text-shadow 0.5s;
+}
+.nav-logo:hover {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.233);
 }
 
 a {
   text-decoration: none;
+}
+
+.main {
+  margin-top: 200px;
 }
