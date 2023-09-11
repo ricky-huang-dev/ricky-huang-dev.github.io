@@ -148,5 +148,15 @@ a {
 }
 
 body {
-  margin-top: 150px;
+  padding-top: 150px;
+}
+@media (max-width: 715px) {
+  body {
+    padding-top: 175px;
+  }
+}
+@media (max-width: 555px) {
+  body {
+    padding-top: 250px;
+  }
 }
