@@ -69,6 +69,7 @@ p {
 .dropdown-content {
   display: none;
   position: absolute;
+  width: auto;
   background-color: rgb(67, 67, 134);
   color: rgb(255, 255, 255);
   border-color: rgb(67, 67, 134);
@@ -83,7 +84,6 @@ p {
 .dropdown-content a {
   color: white;
   padding: 10px 16px;
-  width: 88px;
   text-decoration: none;
   text-align: center;
   display: block;
