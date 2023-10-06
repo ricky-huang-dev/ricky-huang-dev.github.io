@@ -2,8 +2,24 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
+main {
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(67, 67, 134);
+}
+
 p {
-  color: green;
+  color: rgb(0, 0, 0);
+  line-height: 35pt;
 }
 /* nav bar */
 .nav-bar {
